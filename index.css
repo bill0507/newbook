@@ -1,0 +1,122 @@
+h1{
+    color:blue;
+    font-size:40px;
+}
+#bg1{
+    height: 700px;
+    weight:auto;
+    background: url(nuli.jpg) no-repeat;
+    background-size:contain;
+}
+.menu{
+    padding:0;
+    margin:0;
+    clear:left;
+    list-style: none;
+}
+.goto{
+    min-height: 34px;
+    cursor: pointer;
+}
+.goto a{
+    padding:10px 0;
+    display:block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lyric{
+    width:300px;
+    height:300px;
+    padding: 20px;
+    position: relative;
+    float:right;
+    animation: anim 5s infinite alternate;
+    -webkit-animation: anim 5s infinite alternate;
+    font-size:30px;
+    color:red;
+    font-family: 华文行楷, serif;
+    font-weight:normal;
+}
+
+@keyframes anim {
+    0%{background:none;right:0px;top:0px}
+    25%{background:pink;right:700px;top:0px;}
+    50%{background: cyan;right:700px;top:200px;}
+    75%{background: gold;right:0px;top:200px;}
+    100%{background:none;right:0px ;top:0px;}
+}
+
+@-webkit-keyframes anim {
+            0% {
+                background: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background: green;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background: cyan;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background: gold;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+
+.lyric a{
+    text-decoration: none;
+}
+.said{
+    font-size: 25px;
+    font-family: 宋体, serif;
+    font-weight:normal;
+    color:blue;
+    margin:20px;
+    padding:20px;
+    width:700px;
+    float:left;
+    height:600px;
+}
+#header {
+    background-color:yellowgreen;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#222222;
+    height:340px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    background-color:#eeeeee;
+    color:red;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    font-weight:bold;}
+
+a:hover{
+    color:cyan;
+}
