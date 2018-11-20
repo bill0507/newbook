@@ -12,10 +12,10 @@
 <div id="bg1">
 <div id="nav">
     <ul class="menu">
-    <li class="goto"><a href="time.html" >我们的时光</a></li>
+    <li class="goto"><a href="#">未完待续</a></li>
     <li class="goto"><a href="future.html" >Future</a></li>
     <li class="goto"><a href="photo.html" class="goto">Photo</a></li>
-    <li class="goto"><a href="#">未完待续</a></li>
+    <li class="goto" id="secret" onclick="password()"><a>秘密基地</a></li>
     </ul>
 </div>
 
@@ -29,4 +29,13 @@
 </div>
 </div>
 </body>
+    <script>
+        function password() {
+            let = prompt('你需要通过验证才能进入呦~')
+            if(let=='19990507')
+                window.open("secret.html");
+            else
+                alert('想得美');
+        }
+    </script>
 </html>

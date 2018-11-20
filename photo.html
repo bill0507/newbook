@@ -5,6 +5,24 @@
   <title>照片墙</title>
 </head>
 <body>
-
+    Javascript测试
+    <form>
+    <input id="txt" type="text">
+    <button id="btn">登录</button>
+</form>
+<script>
+    document.getElementById("btn").addEventListener("click",demo);
+    function demo() {
+        try{
+        const e =document.getElementById("txt").value;
+        if(e === ""){
+            throw "请输入用户名";
+            }
+        }catch (err) {
+            alert(err)
+        }
+    }
+    //demo()
+</script>
 </body>
 </html>
